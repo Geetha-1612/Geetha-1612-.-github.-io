@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geetha Reddy — Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071022 0%, #081428 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:920px;margin:36px auto;padding:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:22px; box-shadow:0 6px 24px rgba(2,6,23,0.6);}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052016;font-size:28px}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .badges{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    .section{margin-bottom:18px}
+    h2{margin:0 0 12px 0;font-size:16px;color:#dff7ea}
+    ul{margin:0;padding-left:18px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;color:var(--muted);font-size:13px}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:10px}
+    .project h3{margin:0;font-size:14px}
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .right-card .item{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px;margin-bottom:10px}
+    a.cta{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042016;font-weight:600;text-decoration:none}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+    .contact a{color:var(--accent);text-decoration:none}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">GR</div>
+        <div>
+          <h1>Geetha Reddy</h1>
+          <p class="lead">B.Tech (CSE) | III Year — VI Semester, HITAM · Software Development · Data Analytics · Hackathons</p>
+          <div class="badges">
+            <div class="badge">Python</div>
+            <div class="badge">Web: HTML/CSS/JS/PHP/MySQL</div>
+            <div class="badge">Pandas · Power BI</div>
+            <div class="badge">Git · UML · SRS</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h2>About</h2>
+            <p>Hi — I’m Geetha, a passionate B.Tech student focused on building practical solutions using web technologies and data analytics. I enjoy participating in hackathons and collaborating with teammates to turn ideas into working prototypes.</p>
+          </section>
+
+          <section class="section">
+            <h2>Selected Projects</h2>
+            <div class="project">
+              <h3>Online Job Portal</h3>
+              <div class="meta">HTML, CSS, JavaScript, PHP, MySQL — Features: authentication, job posting & applications, database-backed workflows. Includes UML & SRS.</div>
+            </div>
+            <div class="project">
+              <h3>Student Performance Analysis</h3>
+              <div class="meta">Python (Pandas, Matplotlib), Power BI — Cleaned and analyzed student marks data; created dashboards to surface trends and actionable insights.</div>
+            </div>
+            <div class="project">
+              <h3>Big Data Analytics Lab Work</h3>
+              <div class="meta">Experiments and conceptual projects involving MapReduce/Hadoop and large-scale data analysis (based on course material).</div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Hackathons & Experience</h2>
+            <p class="small">Active hackathon participant. Experienced in rapid prototyping, teamwork, and presenting functional demos under time pressure. Comfortable with both frontend and backend tasks during sprints.</p>
+          </section>
+
+          <section class="section">
+            <h2>Contact</h2>
+            <p class="small contact">Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p class="small contact">GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></p>
+            <p class="small contact">LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></p>
+            <a class="cta" href="resume.pdf" download>Download Resume (replace file)</a>
+          </section>
+        </main>
+
+        <aside class="right-card">
+          <div class="item">
+            <h2>Skills</h2>
+            <div class="skill-list">
+              <div class="skill">Python</div>
+              <div class="skill">Pandas</div>
+              <div class="skill">NumPy</div>
+              <div class="skill">Matplotlib</div>
+              <div class="skill">Power BI</div>
+              <div class="skill">HTML/CSS/JS</div>
+              <div class="skill">PHP</div>
+              <div class="skill">MySQL</div>
+              <div class="skill">Git</div>
+            </div>
+          </div>
+
+          <div class="item">
+            <h2>Education</h2>
+            <p class="small">B.Tech — Computer Science & Engineering<br/>HITAM | III Year — VI Semester</p>
+          </div>
+
+          <div class="item">
+            <h2>Achievements</h2>
+            <ul class="small">
+              <li>Completed course work in Big Data Analytics & Cryptography</li>
+              <li>Multiple academic projects in web & data analytics</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <h2>Availability</h2>
+            <p class="small">Open for hackathon collaboration, internships, and project teamwork.</p>
+            <a class="cta" href="mailto:your.email@example.com">Contact Me</a>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <div class="small">Made with ♥ · Replace placeholder links & email before publishing</div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
